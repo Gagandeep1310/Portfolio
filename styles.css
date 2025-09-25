@@ -201,3 +201,15 @@ body {
   height: 300px;
   perspective: 1000px; /* 3D effect */
 }
+/* Flip Card Container */
+#projects .container {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media (max-width: 768px) {
+  #projects .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
