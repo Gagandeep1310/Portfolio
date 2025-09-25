@@ -207,3 +207,74 @@ buttons.forEach(button => {
     </div>
   </div>
 </section>
+<!--contact-->
+<section id="contact" class="fade-section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    
+    <form action="https://formspree.io/f/mqaykryz" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+
+<footer>
+  <div class="container">
+    <div class="social-links">
+      <a href="https://github.com/Gagandeep1310" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gagandeep-kaur-1a9660291/" target="_blank" class="social-link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- JS for Scroll Animations & Header -->
+  <script>
+    // Fade-in sections
+    const faders = document.querySelectorAll(".fade-section");
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+    // Header hide/show on scroll
+    let lastScrollTop = 0;
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if(currentScroll > lastScrollTop){
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
+</body>
+</html>
