@@ -280,4 +280,78 @@ body {
 .flip-card-back ul li {
   margin: 20px 0;
 }
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #cd3ff0; /* pastel purple */
+  box-shadow: 0 0 8px rgba(108, 92, 231, 0.3);
+  outline: none;
+}
+
+.contact-form .btn {
+  background: linear-gradient(135deg, #f5b472,#f2a04e, #e28b34);
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+/* Ensure form doesn’t push footer away */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 40px auto; /* add bottom margin so footer is spaced */
+  padding: 20px;
+}
+
+footer .social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between icons */
+}
+
+footer .social-link {
+  font-size: 28px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-link:hover {
+  color: #6c5ce7; /* pastel purple hover */
+  transform: scale(1.2);
+}
