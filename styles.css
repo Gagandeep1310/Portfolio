@@ -79,3 +79,100 @@ body {
   border: 4px solid #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
+/* About */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.about-img img {
+  width: 300px;
+  border-radius: 12px;
+}
+.btn {
+  display: inline-block;
+  background-color: #cc963f; /* button color */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e28b34; /* darker on hover */
+}
+
+
+/* Projects */
+.project-card {
+  background: #f9f9f9;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.project-card h3 { margin-top: 0; }
+
+/* Skills */
+.skills-list { list-style:none; padding:0; }
+.skills-list li { margin:10px 0; }
+.skills-tabs {
+  display: flex;
+  gap: 20px;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tab-buttons button {
+  background: #f0f0f0;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.tab-buttons button:hover {
+  background: SS#e0e0e0;
+}
+
+.tab-buttons button.active {
+  background: #e28b34;
+  color: #fff;
+}
+
+/* Tab Contents */
+.tab-contents {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content li {
+  margin: 8px 0;
+}
