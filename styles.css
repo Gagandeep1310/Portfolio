@@ -1,1 +1,8 @@
-
+/* Reset & Fonts */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #72b67c, #faf1cf, #fbfafa); /* pastel gradient */
+}
