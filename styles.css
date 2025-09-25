@@ -176,3 +176,20 @@ body {
 .tab-content li {
   margin: 8px 0;
 }
+/* Fade-in effect */
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.projects-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
