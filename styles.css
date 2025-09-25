@@ -193,3 +193,11 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
+/* Flip Card Container */
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px; /* 3D effect */
+}
