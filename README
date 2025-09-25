@@ -1,4 +1,7 @@
-Here's the order in which I want to proceed with this project:
-1. HTML code
-2. CSS code
-3. Hosting it using Git and GitHub
+Welcome to my portfolio website!
+
+Technologies Used:
+1. Frontend: HTML5, CSS3, JavaScript
+2. Libraries & Frameworks: Tailwind CSS, Font Awesome, Devicon
+3. Forms: Formspree for contact form submission
+4. Responsive Design: Flexbox, CSS Grid, Media Queries
