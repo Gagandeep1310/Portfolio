@@ -45,3 +45,37 @@ body {
   font-weight: 600;
   font-size: 1rem; /* ensure readable */
 }
+/* Hero Section */
+.hero-gradient {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  height: 100vh;
+  padding: 100px 180px; /* more left/right margin */
+  gap: 1px; /* space between text and photo */
+}
+
+.hero-inner {
+  flex: 1;
+  color: #fff;
+  max-width: 800px; /* text width */
+}
+
+.hero-inner .intro { font-size: 2rem; margin:0; }
+.hero-inner h2 { font-size: 3.5rem; margin: 10px 0; line-height: 1.2; }
+.hero-inner h3 { font-size: 2.2rem; margin:10px 0; }
+.hero-inner .subtext { font-size:1.3rem; margin-top: 10px; }
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 500px; /* smaller to align with text height */
+  height: 95%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
